@@ -1,0 +1,98 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+:root
+{
+    --main-color:#0aad0a;
+    --light-color:#f0f3f2;
+    --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+    --font-family:'Encode Sans Expanded', sans-serif;
+    --rating-color:#ffc908;
+}
+
+.shadow {
+    box-shadow: var(--shadow);
+}
+.network {
+    border-radius: 5px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: crimson;
+    color: var(--light-color);
+}
+.bg-cart {
+    background-color: #ddd;
+}
+body{
+    font-family: var(--font-family) !important;
+}
+.rating-color
+{
+    color: var(--rating-color);
+}
+.cursor-pointer
+{
+    cursor: pointer;
+}
+a , a:hover{
+    color: black;
+    text-decoration: none;
+}
+.product:hover
+{
+    box-shadow: var(--shadow);
+    border: solid 1px var(--main-color);
+}
+.product .btn 
+{
+    transition: transform 1s , opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+    padding: 5px 10px;
+    margin: 10px 0;
+    width: fit-content;
+}
+
+.heart:hover {
+    color: var(--main-color);
+}
+.product:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+
+}
+.font-sm
+{
+    font-size: 14px;
+}
+.text-main
+{
+    color: var(--main-color);
+}
+.img-holder {
+    max-width: 100%;
+}
+
+.img {
+    width: 40px;
+}
+
+.brdr {
+    border: 1px solid var(--main-color);
+    padding: 0px 2px;
+    border-radius: 3px;
+}
+.row-border {
+    border-bottom: 1px solid var(--light-color);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.bg-main
+{
+    background-color: var(--main-color) !important;
+}
+.bg-main-light 
+{
+    background-color: var(--light-color) !important;
+}
